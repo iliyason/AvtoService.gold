@@ -3,12 +3,14 @@
     src: url(Fonts/ofont.ru_BeaumarchaisC.ttf);
 }
 
+
 *{
     transition: 1s;
 }
 
 body{
     background-color: snow;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, small, li{
@@ -19,7 +21,7 @@ h1{
     font-size: 48px;
 }
 p, li{
-    font-size: 40px;
+    font-size: 26px;
 }
 small{
     font-size: 16px;
@@ -45,7 +47,8 @@ small{
     align-items: center;
 }
 .ico-s-i{
-    width: 100px;
+    max-width: 300px;
+    width: 70%;
     height: 100px;
 }
 .nav-button{
@@ -55,10 +58,9 @@ small{
     align-items: center;
 }
 .nav-button button{
-    background-color: none;
     color: white;
     font-family: BeaumarchaisC;
-    font-size: 24px;
+    font-size: 38px;
     width: 200px;
     height: 50px;
     background: none;
@@ -133,6 +135,9 @@ small{
     margin: 25px 0 25px 0;
 }
 
+.dop-info{
+    margin: 0 0 15px 0;
+}
 .dop-info p, h1{
     color: black;
     text-align: center;
@@ -213,6 +218,8 @@ small{
     align-items: center;
 }
 
+
+                                                            /*Отзывы*/
 .slider-block{
     display: flex;
     justify-content: space-around;
@@ -248,8 +255,22 @@ small{
     max-height: 100px;
 }
 .message{
-    flex-basis: 80%;
+    flex-basis: 30%;
 }
+.message p{
+    font-size: 18pt;
+}
+.ava-user{
+    width: 100%;
+}
+.ava-user img{
+    width: 50%;
+    margin: 0px 25%;
+    border-radius: 50%;
+}
+
+                                                            /*Конец отзывов*/
+
 
 .contacts{
     background-color:#D9D9D9;
@@ -284,4 +305,93 @@ footer h1, small{
     display: flex;
     justify-content:space-around;
     align-items: center;
+}
+.btn-list-menu{
+    display: none;
+}
+.menu-list{
+    width: 50px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 420px){
+    .nav-button{
+        display: none;
+    }
+    .panel-info{
+        display: none;
+    }
+    .btn-list-menu{
+        display: block;
+    }
+    .ava{
+        display: none;
+    }
+    .home{
+        display: block;
+        height: auto;
+        padding-bottom: 60px;
+    }
+    .info-full-insaid h1 {
+        font-size: 45px;
+    }
+    .info-full-insaid{
+        padding: 1px 0 50px 0;
+        min-height: auto;
+    }
+    .records{
+        display: block;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 46px;
+    }
+    small {
+         font-size: 30px;
+    }
+    p, li {
+        font-size: 18px;
+    }
+    .nice-slider{
+        height: auto;
+        flex-direction: column;
+    }
+    .el-slider1, .el-slider2, .el-slider3, .el-slider4 {
+        width: 100%;
+    }
+    .slider-block, .f-d-info{
+        flex-direction: column;
+    }
+    .message {
+        margin: 10px auto;
+    }
+    .ico{
+        width: 25px;
+    }
+    .ico-msg{
+        width: 25px;
+    }
+    .about-us, .work-schedule{
+        width: 90%;
+    }
+    footer small{
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+    .dop-info h1, .about-us h1 {
+        font-size: 24px;
+    }
+    .dop-info li, .about-us p {
+        font-size: 16px;
+    }
+    .work-schedule li{
+        font-size: 20px;
+    }
+    .work-schedule h1{
+        font-size: 26px;
+    }
+
 }

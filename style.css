@@ -317,7 +317,7 @@ footer h1, small{
 
 /*________________Mobile_________________*/
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 480px){
     .header {
         height: 75px;
     }

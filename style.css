@@ -314,13 +314,7 @@ footer h1, small{
     margin-right: 10px;
 }
 
-
-/*________________Mobile_________________*/
-
-@media screen and (max-width: 480px){
-    .header {
-        height: 75px;
-    }
+@media screen and (max-width: 420px){
     .nav-button{
         display: none;
     }
@@ -344,7 +338,6 @@ footer h1, small{
     .info-full-insaid{
         padding: 1px 0 50px 0;
         min-height: auto;
-        margin-top: 75px;
     }
     .records{
         display: block;

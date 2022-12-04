@@ -2,19 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AvtoService</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="menu-list-full" id="menu">
+      <button class="servis" onclick="servise()">Услуги</button>
+      <button class="about_header" onclick="about()">Отзывы</button>
+      <button class="o-nas" onclick="aboutUs()">Контакты</button>
+    </div>
+
       <main>
         <div class="header">
 
           <div class="ico-s"><img src="Img/vk.svg" alt="" class="ico-s-i"></div>
 
           <div class="nav-button">
-            <button class="servis">Услуги</button>
-            <button class="about">Отзывы</button>
-            <button class="o-nas">Контакты</button>
+            <button class="servis" onclick="servise()">Услуги</button>
+            <button class="about" onclick="about()">Отзывы</button>
+            <button class="o-nas" onclick="aboutUs()">Контакты</button>
           </div>
 
           <div class="panel-info">
@@ -26,7 +33,7 @@
           </div>
 
           <div class="btn-list-menu">
-            <img src="img/Menu.png" alt="" class="menu-list">
+            <img src="Img/Menu.png" alt="" class="menu-list" onclick="MenuOpCl()">
           </div>
 
         </div>
@@ -34,12 +41,12 @@
         <div class="home">
 
           <div class="ava-block">
-            <img src="img/Фотография.png" alt="" class="ava">
+            <img src="Img/Фотография.png" alt="" class="ava">
           </div>
           
           <div class="info-full">
             <div class="info-full-insaid">
-              <h1 class="name">DinAvto</h1>
+              <h1 class="name">AvtoService</h1>
               <p class="info-user">Лучший автосалон...</p>
             </div>
           </div>
@@ -74,31 +81,31 @@
         <div class="nice-slider">
           <div class="el-slider1">
             <div class="text-sl1">
-              <h1>Замена<br>масла</h1>
+              <h1>Замена <br>масла</h1>
               <p>>><br>тут будет описание. тут будет описание. тут будет описание...</p>
             </div>
           </div>
           <div class="el-slider2">
             <div class="text-sl2">
-              <h1>Ремон<br>подвески</h1>
+              <h1>Ремон <br>подвески</h1>
               <p>>><br>тут будет описание. тут будет описание. тут будет описание...</p>
             </div>
           </div>
           <div class="el-slider3">
             <div class="text-sl3">
-              <h1>Диагностика<br>автомобиля</h1>
+              <h1>Диагностика <br>автомобиля</h1>
               <p>>><br>тут будет описание. тут будет описание. тут будет описание...</p>
             </div>
           </div>
           <div class="el-slider4">
             <div class="text-sl4">
-              <h1>Замена<br>автомагнитоллы</h1>
+              <h1>Замена <br>автомагнитоллы</h1>
               <p>>><br>тут будет описание. тут будет описание. тут будет описание...</p>
             </div>
           </div>
         </div>
 
-        <div class="full-list-serv">
+        <div class="full-list-serv" id="full-list-serv">
           <h1>Полный перечень услуг</h1>
           <div class="f-l-s-el">
             <div class="text-block">
@@ -134,13 +141,13 @@
           </div>
         </div>
 
-        <div class="about">
+        <div class="about" id="about">
           <div class="name-block"><h1>Отзывы клиентов</h1><hr></div>
           
           <div class="slider-block">
 
             <div class="message">
-              <div class="ava-user"><img src="img/ava1.png" alt=""></div>
+              <div class="ava-user"><img src="Img/ava1.png" alt=""></div>
               <div class="avtor"><h1>Дмитрий</h1><hr></div>
               <div class="msg"><p>
                 Все что указано в договоре, было выполнено в срок, поэтому могу поставить вашей компании "отлично" и советовать другим обращаться только к вам. Приятно удивлена уровнем ваших мастеров и их дисциплиной. Спасибо вам большое!
@@ -148,32 +155,32 @@
             </div>
 
             <div class="message">
-              <div class="ava-user"><img src="img/ava2.png" alt=""></div>
+              <div class="ava-user"><img src="Img/ava2.png" alt=""></div>
               <div class="avtor"><h1>Юлия</h1><hr></div>
               <div class="msg"><p>
-                Все что указано в договоре, было выполнено в срок, поэтому могу поставить вашей компании "отлично" и советовать другим обращаться только к вам. Приятно удивлена уровнем ваших мастеров и их дисциплиной. Спасибо вам большое!
+                Сотрудники компании AvtoService являются настоящими профессионалами своего дела. При этом они дружелюбны и всегда готовы помочь. Мне также нравится гибкая ценовая политика. Я всегда знаю, что получу здесь хорошее обслуживание по разумным ценам.
               </p></div>
             </div>
 
             <div class="message">
-              <div class="ava-user"><img src="img/ava1.png" alt=""></div>
+              <div class="ava-user"><img src="Img/ava1.png" alt=""></div>
               <div class="avtor"><h1>Михаил</h1><hr></div>
               <div class="msg"><p>
-                Все что указано в договоре, было выполнено в срок, поэтому могу поставить вашей компании "отлично" и советовать другим обращаться только к вам. Приятно удивлена уровнем ваших мастеров и их дисциплиной. Спасибо вам большое!
+                Была проблема с шумом в передней подвеске. Обращался в три фирмы, в том числе к официалам — одно разочарование. Результат нулевой, только пытались навязывать, как обычно, ненужные услуги. Я слушала этот шум в течение шести месяцев и постоянно была раздражена. Потом вспомнила, что знакомый советовал мне AvtoService. Я не ездила туда, потому что мой дом далеко от них.
               </p></div>
             </div>
 
           </div>
         </div>
 
-        <div class="contacts">
+        <div class="contacts" id="contacts">
           <div class="cont">
             <img src="Img/geo.svg" alt="" class="ico">
-            <p>ул.Победы, д.3</p>
+            <p>г. Москва, ул. Победы, д. 3</p>
           </div>
           <div class="cont">
             <img src="Img/phone.svg" alt="" class="ico">
-            <p>8(999)250-48-69</p>
+            <p>1(234)456-78-90</p>
           </div>
           <div class="cont">
             <img src="Img/Email.svg" alt="" class="ico">
@@ -191,7 +198,7 @@
         <div class="f-d-info">
           <div class="about-us">
             <h1>О нас</h1>
-            <p>Мы предлагаем такие то услуги...</p>
+            <p>Наш автосервис основан в 2011 году настоящими профессионалами, которые занимаются ремонтом автомобилей более тридцати лет своей жизни. Они уже знают о вашей машине всё и приведут вашу "ласточку" в порядок в кратчайшие сроки. Ремонтируйтесь у нас, ведь если вам что-то не понравится, мы вернем деньги!</p>
           </div>
           <div class="work-schedule">
             <h1>График работы</h1>
